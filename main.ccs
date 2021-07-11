@@ -1,5 +1,10 @@
-LP MAN
+LP INF
+-This is a example project. It uses the Pythagorean theorem to calculate sides of a triangle (A^2+B^2 = C^2)
 ISA
 ISB
+STC 2
+A^C
+B^C
 A+B
+ASQ
 >A
