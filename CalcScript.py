@@ -1,5 +1,9 @@
 from os import error
-FILE_ = open("main.ccs","r").readlines()
+import sys
+try:
+    FILE_ = open(sys.argv[1],"r").readlines()
+except:
+    FILE_ = open("main.ccs","r").readlines()
 VA = 0
 VB = 0
 VC = 0
@@ -23,17 +27,17 @@ while True:
     for line in FILE:
         STRIP = line[0:3]
         if STRIP == "STA":
-            VA = int(line[4:])
+            VA = float(line[4:])
         elif STRIP == "STB":
-            VB = int(line[4:])
+            VB = float(line[4:])
         elif STRIP == "STC":
-            VC = int(line[4:])
+            VC = float(line[4:])
         elif STRIP == "ISA":
-            VA = int(input("A=>"))
+            VA = float(input("A=>"))
         elif STRIP == "ISB":
-            VB = int(input("B=>"))
+            VB = float(input("B=>"))
         elif STRIP == "ISC":
-            VC = int(input("C=>"))
+            VC = float(input("C=>"))
         elif STRIP == "A++":
             VA += 1
         elif STRIP == "B++":
