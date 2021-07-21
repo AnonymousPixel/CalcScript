@@ -19,4 +19,4 @@ Calcscript is a python-based, simple algorithmic parser. Using Calcscript, it is
 All other text will be printed as string, variables can be embedded like so: `>A`, `>B` or `>C`; `Sqrt of >B is: >C`
 
 ## Github
-The CalcScript.py file is the 'interperter' which will read the main.ccs file
+The CalcScript~~.py~~.exe file is the 'interperter' which will read the main.ccs file
